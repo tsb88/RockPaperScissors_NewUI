@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tejasbhoir.rockpaperscissor_newui.MainActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="171dp"
+        android:layout_height="29dp"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="Name: Tejas Bhoir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintVertical_bias="0.032"
+        tools:layout_editor_absoluteY="5dp"
+        tools:layout_editor_absoluteX="71dp" />
+
+    <TextView
+        android:id="@+id/netID"
+        android:layout_width="115dp"
+        android:layout_height="32dp"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="NetID: tsb88"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.112" />
+
+    <TextView
+        android:id="@+id/AI_title"
+        android:layout_width="134dp"
+        android:layout_height="38dp"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="Computer Chose:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintVertical_bias="0.231"
+        tools:layout_editor_absoluteY="94dp"
+        tools:layout_editor_absoluteX="189dp" />
+
+    <Spinner
+        android:id="@+id/item_choice"
+        android:layout_width="107dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintVertical_bias="0.271"/>
+
+    <TextView
+        android:id="@+id/your_choice_title"
+        android:layout_width="98dp"
+        android:layout_height="34dp"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="Your Choice:"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintVertical_bias="0.377"
+        tools:layout_editor_absoluteY="170dp"
+        tools:layout_editor_absoluteX="18dp" />
+
+    <TextView
+        android:id="@+id/your_choice"
+        android:layout_width="105dp"
+        android:layout_height="35dp"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="--"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintVertical_bias="0.472" />
+
+    <TextView
+        android:id="@+id/AI_choice"
+        android:layout_width="118dp"
+        android:layout_height="30dp"
+        android:gravity="center_horizontal"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:text="--"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintVertical_bias="0.318"
+        tools:layout_editor_absoluteY="147dp"
+        tools:layout_editor_absoluteX="199dp" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="142dp"
+        android:layout_height="68dp"
+        android:visibility="visible"
+        android:src="@drawable/invisible"
+        app:srcCompat="@drawable/invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.876"
+        app:layout_constraintVertical_bias="0.451"/>
+
+    <Button
+        android:id="@+id/checkScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="checkScore"
+        android:text="Check Score"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.691" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="resetScore"
+        android:text="Reset Score"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.887"
+        app:layout_constraintHorizontal_bias="0.502" />
+
+</android.support.constraint.ConstraintLayout>

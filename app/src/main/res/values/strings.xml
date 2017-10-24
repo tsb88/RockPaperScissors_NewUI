@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">RockPapersScissors</string>
+    <string name="choose_item">Choose Your Item</string>
+    <string-array name="items">
+        <item></item>
+        <item>Rock</item>
+        <item>Paper</item>
+        <item>Scissor</item>
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
+
